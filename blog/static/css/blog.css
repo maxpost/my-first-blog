@@ -45,3 +45,17 @@ h1, h2, h3, h4 {
 .post h1 a, .post h1 a:visited {
     color: #000000;
 }
+
+.column {
+  height: 300px;
+  padding: 10px;
+  float: left;
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
