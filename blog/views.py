@@ -13,3 +13,6 @@ def post_detail(request, pk):
 
 def cv(request):
     return render(request, 'blog/cv.html', {})
+
+def index(request):
+    return render(request, 'blog/index.html', {})
