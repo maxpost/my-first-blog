@@ -24,16 +24,16 @@
 	<div class="collapse navbar-collapse" id="navbarResponsive">
 		<ul class="navbar-nav ml-auto">
 			<li class="nav-item active">
-				<a class="nav-link" href="#">Home</a>
+				<a class="nav-link" href="{% url 'home' %}">Home</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Resume</a>
+				<a class="nav-link" href="{% url 'resume' %}">Resume</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Blog</a>
+				<a class="nav-link" href="{% url 'apps' %}">Blog</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Apps</a>
+				<a class="nav-link" href="{% url 'apps' %}">Apps</a>
 			</li>
 		</ul>
 	</div>
@@ -51,7 +51,7 @@
 		<div class="carousel-item active">
 			<img src="{% static 'img/background.png' %}">
 			<div class="carousel-caption">
-			  <h1 class="display-2">Thema 1</h1>
+			  <h1 class="display-2">Just Max!</h1>
 			  <h3> Das Thema beinhaltet...</h3>
 			  <button type"button" class="btn btn-outline-light btn-lg"> Zeigs mir! </button>
 			</div>
@@ -133,53 +133,34 @@
 
 <!--- Two Column Section -->
 
-
 <!--- Fixed background -->
-
 
 <!--- Emoji Section -->
 
-
 <!--- Meet the team -->
-
 
 <!--- Cards -->
 
-
 <!--- Two Column Section -->
 
-
 <!--- Connect -->
-<div class="container-fluid padding">
-<div class="row text-center padding">
-	<div class="col-12">
-		<h2>Connect</h2>
-	</div>
-	<div class="col-12 social padding">
-		<a href="#"><i class="fab fa-linkedin"></i></a>
-		<a href="#"><i class="fab fa-xing-square"></i></a>
-		<a href="#"><i class="fab fa-github-square"></i></a>
-		<a href="#"><i class="fab fa-odnoklassniki-square"></i></a>
-	</div>
-</div>
-</div>
 
 <!--- Footer -->
 <footer>
-	<div class="container-fluid padding">
-		<div class="row text-center">
+	<div class="container-fluid text-center">
+		<div class="row">
 			<div class="col-md-4">
-				<h1>Test</h1>
+				<h1></h1>
 			</div>
 			<div class="col-md-4">
-				<h1>Test</h1>
+				<h1>Connect</h1>
+				<a href="https://www.linkedin.com/in/maximilian-post-282354122"><i class="fab fa-linkedin"></i></a>
+				<a href="https://www.xing.com/profile/Maximilian_Post3"><i class="fab fa-xing-square"></i></a>
+				<a href="https://www.github.com/maxpost"><i class="fab fa-github-square"></i></a>
+				<a href="https://www.datacamp.com/profile/maxpost"><i class="fab fa-odnoklassniki-square"></i></a>
 			</div>
 			<div class="col-md-4">
-				<h1>Test</h1>
-			</div>
-			<div class="col-12">
-				<hr class="light">
-				<h5>&copy; maxpost.com</h5>
+				<h1></h1>
 			</div>
 		</div>
 	</div>

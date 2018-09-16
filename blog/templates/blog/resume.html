@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Resume</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	{% load staticfiles %}
+	<link rel='stylesheet' href="{% static 'css/style.css' %}" type='text/css'/>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+<div class="container-fluid">
+	<img src="{% static 'img/profil.jpg' %}" class="rounded-circle" width="75">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'home' %}">Home</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="{% url 'resume' %}">Resume</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'apps' %}">Blog</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'apps' %}">Apps</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</nav>
+<!--- Einleitung -->
+<div class="container-fluid">
+	<div class"row">
+		<div class="col-xs-12 col-sm-2 col-md-2">
+			<img src="{% static 'img/profil.jpg' %}" class="rounded-circle" width="150">
+		</div>
+		<div class="col-xs-12 col-sm-9 col-md-9">
+			<p>Text text text Text text textText text textText text textText text
+				textText text textText text textText text textText text textText text
+				Text text textText text texttextText text textText text textText text text</p>
+		</div>
+	</div>
+</div>
+<!--- Nested -->
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="heading-1">
+      <h5 class="mb-0">
+        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+          Experience
+        </a>
+      </h5>
+    </div>
+    <div id="collapse-1" class="collapse" data-parent="#accordion" aria-labelledby="heading-1">
+      <div class="card-body">
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<p>07/2018 -        </p>
+					</div>
+					<div class="col-xs-12 col-sm-8 col-md-8">
+						<p>Senior Technical Consultant</p>
+						<p>Big Data & Analytics</p>
+						<p>NTT DATA Deutschland GmbH</p>
+						<p>80807 München</p>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<p>10/2016 - 06/2018</p>
+					</div>
+					<div class="col-xs-12 col-sm-8 col-md-8">
+						<p>Technical Consultant</p>
+						<p>Big Data & Analytics</p>
+						<p>NTT DATA Deutschland GmbH</p>
+						<p>80807 München</p>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<p>08/2007 - 07/2009</p>
+					</div>
+					<div class="col-xs-12 col-sm-8 col-md-8">
+						<p>Junior Consultant</p>
+						<p>Big Data & Analytics</p>
+						<p>it-novum GmbH</p>
+						<p>36037 Fulda</p>
+					</div>
+				</div>
+      </div>
+    </div>
+  </div>
+	<div class="card">
+		<div class="card-header" id="heading-2">
+			<h5 class="mb-0">
+				<a class="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+					Education
+				</a>
+			</h5>
+		</div>
+		<div id="collapse-2" class="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+			<div class="card-body">
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<p>04/2014 - 05/2016</p>
+					</div>
+					<div class="col-xs-12 col-sm-8 col-md-8">
+						<p>Wirtschaftsinformatik</p>
+						<p>Master of Science</p>
+						<p>Durchschnittsnote 1,4</p>
+						<p>Universität Würzburg</p>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<p>10/2010 - 03/2014</p>
+					</div>
+					<div class="col-xs-12 col-sm-8 col-md-8">
+						<p>Wirtschaftsinformatik</p>
+						<p>Bachelor of Science</p>
+						<p>Durchschnittsnote 1,9</p>
+						<p>Hochschule Fulda</p>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<p>08/2007 - 07/2009</p>
+					</div>
+					<div class="col-xs-12 col-sm-8 col-md-8">
+						<p>Wirtschaftsinformatik</p>
+						<p>Fachhochschulreife</p>
+						<p>Durchschnittsnote 2,0</p>
+						<p>Handelsschule Herrmann</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  <div class="card">
+    <div class="card-header" id="heading-3">
+      <h5 class="mb-0">
+        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+          Technologies
+        </a>
+      </h5>
+    </div>
+    <div id="collapse-3" class="collapse" data-parent="#accordion" aria-labelledby="heading-3">
+      <div class="card-body">
+				<div class="row">
+				</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--- Connect -->
+<div class="container-fluid padding">
+<div class="row text-center padding">
+	<div class="col-12">
+		<h2>Connect</h2>
+	</div>
+	<div class="col-12 social padding">
+		<a href="#"><i class="fab fa-linkedin"></i></a>
+		<a href="#"><i class="fab fa-xing-square"></i></a>
+		<a href="#"><i class="fab fa-github-square"></i></a>
+		<a href="#"><i class="fab fa-odnoklassniki-square"></i></a>
+	</div>
+</div>
+</div>
+
+<!--- Footer -->
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-4">
+				<h1>Test</h1>
+			</div>
+			<div class="col-md-4">
+				<h1>Test</h1>
+			</div>
+			<div class="col-md-4">
+				<h1>Test</h1>
+			</div>
+			<div class="col-12">
+				<hr class="light">
+				<h5>&copy; maxpost.com</h5>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

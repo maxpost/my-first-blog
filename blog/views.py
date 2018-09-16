@@ -11,8 +11,11 @@ def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_detail.html', {'post': post})
 
-def cv(request):
-    return render(request, 'blog/cv.html', {})
+def home(request):
+    return render(request, 'blog/home.html', {})
 
-def index(request):
-    return render(request, 'blog/index.html', {})
+def resume(request):
+    return render(request, 'blog/resume.html', {})
+
+def apps(request):
+    return render(request, 'blog/apps.html', {})
