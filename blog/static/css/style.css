@@ -54,16 +54,24 @@ html, body {
 }
 
 .fa-linkedin, .fa-xing-square, .fa-github-square, .fa-odnoklassniki-square{
-  color: #FFF;
-  font-size: 4em;
+  color: #f8f9fa;
+  font-size: 3em;
   margin: 1rem;
+}
+
+.fa-linkedin:hover, .fa-xing-square:hover, .fa-github-square:hover, .fa-odnoklassniki-square:hover {
+  color: #868e96;
 }
 
 footer {
   width: 100%;
   padding: 5% 5% 10% 5%;
-  background-color: #23415C;
-  color: #FFF;
+  color: #868e96;
+}
+
+.footer-name{
+  color:#f8f9fa;
+  padding-top: 20%;
 }
 
 .fa-code, .fa-python, .fa-bold, .fa-css3, .fa-github, .fa-dyalog {
@@ -76,24 +84,35 @@ footer {
   display: block;
   position: relative;
 }
+
 .mb-0 > a:after {
   content: "\f078"; /* fa-chevron-down */
   font-family: 'FontAwesome';
   position: absolute;
   right: 0;
 }
+
 .mb-0 > a[aria-expanded="true"]:after {
   content: "\f077"; /* fa-chevron-up */
 }
+
 .img-responsive {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
+.intro_resume{
+  background-image: url("../img/background.png");
+}
+
 .card-header{
   color: #FFF;
-  background-color: black;
+  background-color: #868e96;
+}
+
+.collapsed{
+  color: #FFF;
 }
 
 /*---Media Queries --*/
