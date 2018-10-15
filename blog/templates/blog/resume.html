@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#4285f4">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<title>Resume</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -12,6 +14,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 	{% load staticfiles %}
 	<link rel='stylesheet' href="{% static 'css/style.css' %}" type='text/css'/>
+	<link rel="icon" type="image/vnd.microsoft.icon" href="{% static 'img/favicon.ico' %}">
 </head>
 <body>
 
@@ -44,11 +47,10 @@
 <!--- Einleitung -->
 <div class="container-fluid intro_resume">
 	<div class="row">
-		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 intro_resume_img">
-			<img src="{% static 'img/profil.jpg' %}" class="rounded-circle" width="150">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 intro_resume_img">
+			<img src="{% static 'img/profil.jpg' %}" class="rounded-circle" width="200">
 		</div>
-		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
-			<h3>Resume</h3>
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center" style="padding-left:20px;padding-right:20px;">
 			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
 				eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
 				voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
@@ -63,9 +65,9 @@
 </div>
 
 <!--- Nested -->
-<div id="accordion">
-  <div class="card">
-    <div class="card-header" id="heading-1">
+<div class="bg-dark" id="accordion">
+  <div class="card bg-dark">
+    <div class="card-header bg-dark" id="heading-1">
       <h5 class="mb-0">
         <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
           <i class="fas fa-briefcase"></i>  Experience
@@ -118,8 +120,8 @@
       </div>
     </div>
   </div>
-	<div class="card">
-		<div class="card-header" id="heading-2">
+	<div class="card bg-dark">
+		<div class="card-header bg-dark" id="heading-2">
 			<h5 class="mb-0">
 				<a class="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
 					<i class="fas fa-graduation-cap"></i> Education
@@ -172,8 +174,8 @@
 			</div>
 		</div>
 	</div>
-  <div class="card">
-    <div class="card-header" id="heading-3">
+  <div class="card bg-dark">
+    <div class="card-header bg-dark" id="heading-3">
       <h5 class="mb-0">
         <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
           <i class="fas fa-sliders-h"></i> Skills
@@ -280,7 +282,7 @@
 						</div>
 						<div class="SkillBar">
 							<div id="Skill-JS">
-								<span class="Skill-Area ">Javascript</span>
+								<span class="Skill-Area ">JavaScript</span>
 								<span class="PercentText ">65%</span>
 							</div>
 						</div>
@@ -328,10 +330,9 @@
 </div>
     </div>
   </div>
-	<div class="card">
-		<div class="card-header" id="heading-4">
+	<div class="card bg-dark">
+		<div class="card-header bg-dark" id="heading-4">
 			<h5 class="mb-0">
-
 				<a class="collapsed" role="button" data-toggle="collapse" href="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
 					<i class="far fa-folder-open"></i> Projects
 				</a>
@@ -339,13 +340,97 @@
 		</div>
 		<div id="collapse-4" class="collapse" data-parent="#accordion" aria-labelledby="heading-4">
 			<div class="card-body">
-
-
+				<div class="row text-center" style="padding-right:10px;padding-left:10px">
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class"row text-center" style="padding-right:10px;padding-left:10px">
+							<div class="col-12 resume_details">
+								<p style="font-size: 1.25em;" class="text-dark">Analysis of the driving and charging <br> behaviour of electric vehicles</p>
+								<hr>
+								<p style="color: #868e96;"><i class="far fa-compass"></i> Automotive | <i class="far fa-clock"></i> 5 Month | <i class="fas fa-users"></i> 5 Members</p>
+								<hr>
+								<p> Responsible for project management, data cleansing and analysis, dashboarding.</p>
+								<p style="color: #868e96;"><i class="fas fa-wrench"></i> Python, MySQL, Tableau</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class"row text-center" style="padding-right:10px;padding-left:10px">
+							<div class="col-12 resume_details">
+								<p style="font-size: 1.25em;" class="text-dark">Automated assignment of support<br>ticktes via text mining</p>
+								<hr>
+								<p style="color: #868e96;"><i class="far fa-compass"></i> Automotive | <i class="far fa-clock"></i> 5 Month | <i class="fas fa-users"></i> 2 Members</p>
+								<hr>
+								<p>Responsible for project management, web interface and algorithm development.</p>
+								<p style="color: #868e96;"><i class="fas fa-wrench"></i> Python, Django, Bootstrap</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class"row text-center" style="padding-right:10px;padding-left:10px">
+							<div class="col-12 resume_details">
+								<p style="font-size: 1.25em;" class="text-dark">Prediction of component quality<br>using a decision tree</p>
+								<hr>
+								<p style="color: #868e96;"><i class="far fa-compass"></i> Automotive | <i class="far fa-clock"></i> 3 Month | <i class="fas fa-users"></i> 3 Members</p>
+								<hr>
+								<p>Responsible for automation, extension and optimization of machine learning scripts.</p>
+								<p style="color: #868e96;"><i class="fas fa-wrench"></i> Python, Oracle, Shell</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class"row text-center" style="padding-right:10px;padding-left:10px">
+							<div class="col-12 resume_details">
+								<p style="font-size: 1.25em;" class="text-dark">Development of a cost calculator<br> for financial products </p>
+								<hr>
+								<p style="color: #868e96;"><i class="far fa-compass"></i> Finance | <i class="far fa-clock"></i> 6 Month | <i class="fas fa-users"></i>12 Members</p>
+								<hr>
+								<p>Responsible for the data model and development of ETL routines.<p>
+								<p style="color: #868e96;"><i class="fas fa-wrench"></i> Postgres, Oracle, Informatica PowerCenter</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class"row text-center" style="padding-right:10px;padding-left:10px">
+							<div class="col-12 resume_details">
+								<p style="font-size: 1.25em;" class="text-dark">Connecting new capital<br>management companies to DWH</p>
+								<hr>
+								<p style="color: #868e96;"><i class="far fa-compass"></i> Finance | <i class="far fa-clock"></i> 3 Month | <i class="fas fa-users"></i>10 Members</p>
+								<hr>
+								<p>Responsible for development of ETL routines and shell scripts.</p>
+								<p style="color: #868e96;"><i class="fas fa-wrench"></i> Informatica PowerCenter, Shell, Oracle</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class"row text-center" style="padding-right:10px;padding-left:10px">
+							<div class="col-12 resume_details">
+								<p style="font-size: 1.25em;" class="text-dark">Building a Data Lake as part<br>of the digitalization strategy</p>
+								<hr>
+								<p style="color: #868e96;"><i class="far fa-compass"></i> Finance | <i class="far fa-clock"></i> 5 Month | <i class="fas fa-users"></i> 100 Members</p>
+								<hr>
+								<p>Responsible for budget tracking, appointment coordination and quality management.</p>
+								<p style="color: #868e96;"><i class="fas fa-wrench"></i> MS Office, SAP R/3</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class"row text-center" style="padding-right:10px;padding-left:10px">
+							<div class="col-12 resume_details">
+								<p style="font-size: 1.25em;" class="text-dark">Development of an interactive<br>reporting solution</p>
+								<hr>
+								<p style="color: #868e96;"><i class="far fa-compass"></i> Finance | <i class="far fa-clock"></i> 4 Month | <i class="fas fa-users"></i> 2 Members</p>
+								<hr>
+								<p>Responsible for requirements analysis and development of the dashboards.</p>
+								<p style="color: #868e96;"><i class="fas fa-wrench"></i> Pentaho BA, Bootstrap, JavaScript</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="card">
-		<div class="card-header" id="heading-5">
+	<div class="card bg-dark">
+		<div class="card-header bg-dark" id="heading-5">
 			<h5 class="mb-0">
 
 				<a class="collapsed" role="button" data-toggle="collapse" href="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
@@ -355,7 +440,52 @@
 		</div>
 		<div id="collapse-5" class="collapse" data-parent="#accordion" aria-labelledby="heading-45">
 			<div class="card-body">
-					
+
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+	<div class="row">
+	  <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+		   <div class="row h-50">
+				  <div class="col-md-12 col-sm-12 co-xs-12 gal-item">
+							<div class="box">
+						 <img src="http://fakeimg.pl/758x370/" class="img-ht img-fluid rounded">
+							</div>
+					</div>
+			</div>
+
+	    <div class="row h-50">
+				 <div class="col-md-6 col-sm-6 co-xs-12 gal-item">
+				  <div class="box">
+					<img src="http://fakeimg.pl/748x177/" class="img-ht img-fluid rounded">
+				</div>
+				</div>
+
+				<div class="col-md-6 col-sm-6 co-xs-12 gal-item">
+				 <div class="box">
+					<img src="http://fakeimg.pl/371x370/" class="img-ht img-fluid rounded">
+				</div>
+				</div>
+            </div>
+      </div>
+
+           <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+			   <div class="col-md-12 col-sm-6 co-xs-12 gal-item h-25">
+				<div class="box">
+					<img src="http://fakeimg.pl/748x177/" class="img-ht img-fluid rounded">
+				</div>
+				</div>
+
+				  <div class="col-md-12 col-sm-6 co-xs-12 gal-item h-75">
+				   <div class="box">
+					<img src="http://fakeimg.pl/748x177/" class="img-ht img-fluid rounded">
+				</div>
+				</div>
+            </div>
+
+	</div>
+	<br/>
+</div>
 			</div>
 		</div>
 	</div>
