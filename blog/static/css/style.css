@@ -40,6 +40,9 @@ html, body {
   text-shadow: 1px 1px 10px #000;
 }
 /*--Carousel Ende-*/
+.xyz {
+  background-color: #222;
+}
 
 .welcome {
   width: 75%;
@@ -81,8 +84,8 @@ footer hr{
 /*--Footer Ende--*/
 
 .fa-code, .fa-python, .fa-bold, .fa-css3, .fa-github, .fa-dyalog {
-  color: #868e96;
-  font-size: 4em;
+  color: #f8f9fa;
+  font-size: 2em;
   margin: 1rem;
 }
 
@@ -761,7 +764,93 @@ to {
 	object-fit:cover;
 }
 
+.home_wallpaper {
+  background-image: url("../img/wallpaper_home.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.resume_wallpaper {
+  background-image: url("../img/background5.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.biohacker_wallpaper {
+  /*background-image: url("../img/background5.jpeg");*/
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f8f9fa;
+}
+.biohacker_wallpaper h2{
+    font-size: 205%;
+    font-weight: 500;
+    text-shadow: 1px 1px 10px #000;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: #f8f9fa;
+}
+.biohacker_wallpaper hr {
+  border-top: 2px solid #f8f9fa;
+}
 
+.developer_wallpaper {
+  background-image: url("../img/trees_wp_sw_1.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f8f9fa;
+}
+
+.developer_wallpaper h2{
+    font-size: 205%;
+    font-weight: 500;
+    text-shadow: 1px 1px 10px #000;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: #f8f9fa;
+}
+
+.developer_wallpaper hr {
+  border-top: 2px solid #f8f9fa;
+}
+.tech_overview {
+  border: 3px solid #f8f9fa;
+}
+
+.centered {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  border: 3px solid #f8f9fa;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.centered h1{
+  font-size: 500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #000;
+  font-family: 'Ubuntu', sans-serif;
+  color: #f8f9fa;
+  text-align: center;
+}
+
+.centered h3{
+  font-size: 205%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  color: #f8f9fa;
+  text-align: center;
+}
 
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
