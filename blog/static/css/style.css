@@ -89,6 +89,11 @@ footer hr{
   margin: 1rem;
 }
 
+.fa-quote-right {
+  color: #f8f9fa;
+  font-size: 2em;
+  margin: 1rem;
+}
 
 .mb-0 > a {
   display: block;
@@ -765,7 +770,7 @@ to {
 }
 
 .home_wallpaper {
-  background-image: url("../img/wallpaper_home.jpg");
+  background-image: url("../img/wallpaper_home.png");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -779,7 +784,7 @@ to {
   background-size: cover;
 }
 .biohacker_wallpaper {
-  /*background-image: url("../img/background5.jpeg");*/
+  background-image: url("../img/trees_wp_sw.png");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -819,8 +824,19 @@ to {
 .developer_wallpaper hr {
   border-top: 2px solid #f8f9fa;
 }
-.tech_overview {
-  border: 3px solid #f8f9fa;
+.built_by {
+  border-bottom: 3px solid orange;
+  color: #f8f9fa;
+  background-color: orange;
+}
+.quote_home {
+  border-bottom: 3px solid orange;
+  background-color: orange;
+  color: #f8f9fa;
+}
+
+.quote_home h4 {
+  font-style: italic;
 }
 
 .centered {
