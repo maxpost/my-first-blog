@@ -771,7 +771,7 @@ to {
 }
 
 .home_wallpaper {
-  background-image: url("../img/wallpaper_home.png");
+  background-image: url("../img/wallpaper_home.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -785,7 +785,7 @@ to {
   background-size: cover;
 }
 .about_me {
-  background-image: url("../img/trees_wp_sw.png");
+  background-image: url("../img/trees_wp_sw.jpg");
   height: 110%;
   background-position: center;
   background-repeat: no-repeat;
@@ -804,7 +804,7 @@ to {
   border-top: 2px solid #f8f9fa;
 }
 .biohacker_wallpaper {
-  background-image: url("../img/mountain_wp_sw.png");
+  background-image: url("../img/mountain_wp_sw.jpg");
   height: 110%;
   background-position: center;
   background-repeat: no-repeat;
@@ -824,7 +824,7 @@ to {
 }
 
 .developer_wallpaper {
-  background-image: url("../img/waves_wp_sw.png");
+  background-image: url("../img/waves_wp_sw.jpg");
   height: 110%;
   background-position: center;
   background-repeat: no-repeat;
@@ -845,15 +845,19 @@ to {
   border-top: 2px solid #f8f9fa;
 }
 
+.nav_border {
+  border-bottom: 2px solid orange;
+}
 .built_by {
-  border-bottom: 3px solid orange;
+  border-bottom: 2px solid orange;
   color: #f8f9fa;
-  background-color: orange;
+  background-color: #343a40;
 }
 .quote_home {
   background-color: #343a40;
   color: #f8f9fa;
-    text-align: center;
+  text-align: center;
+  border-bottom: 2px solid orange;
 }
 
 .quote_home h4 {
@@ -865,9 +869,11 @@ to {
 
 }
 .setting_home {
-  background-color: orange;
+  background-color: #343a40;
   color: #f8f9fa;
   text-align: center;
+  border-top: 2px solid orange;
+  border-bottom: 2px solid orange;
 }
 
 .centered {
